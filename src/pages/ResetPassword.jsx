@@ -14,7 +14,7 @@ function ResetPassword() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/auth/reset-password",
+        "https://invoice-management-backend-tqr8.onrender.com/auth/reset-password",
         {
           resetToken: token,
           passwordHash: passwordHash,

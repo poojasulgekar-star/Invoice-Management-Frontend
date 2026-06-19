@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import GroupDashboard from "./pages/GroupDashboard";
 import ResetPassword from "./pages/ResetPassword";
 import ProtectedRoute from "./components/ProtectedRoute";
+import ForgotPassword from "./pages/ForgetPassword";
 
 // Admin Route
 function AdminRoute({ children }) {
@@ -56,6 +57,11 @@ function App() {
           path="/reset-password/:token"
           element={<ResetPassword />}
         />
+
+          <Route
+            path="/forgot-password"
+            element={<ForgotPassword />}
+          />
 
         {/* Admin Only Route */}
         <Route

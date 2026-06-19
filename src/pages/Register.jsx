@@ -24,7 +24,7 @@ function Register() {
 
     try {
       await axios.post(
-        "http://localhost:8080/auth/register",
+        "https://invoice-management-backend-tqr8.onrender.com/auth/register",
         user
       );
 

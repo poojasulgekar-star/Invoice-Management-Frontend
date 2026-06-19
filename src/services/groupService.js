@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/groups";
+const API_URL = "https://invoice-management-backend-tqr8.onrender.com/api/groups";
 
 export const getGroups = () => {
   return axios.get(API_URL);

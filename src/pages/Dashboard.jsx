@@ -27,7 +27,7 @@ useEffect(() => {
       localStorage.removeItem("user");
       alert("Session expired due to inactivity");
       navigate("/");
-    }, 10 * 60 * 1000); // 10 minutes
+    },  10 * 60 * 1000); // 10 minutes
   };
 
   window.addEventListener("mousemove", resetTimer);
@@ -47,11 +47,11 @@ useEffect(() => {
 const fetchCounts = async () => {
   try {
     const usersRes = await axios.get(
-      "http://localhost:8080/auth/users/count"
+      "https://invoice-management-backend-tqr8.onrender.com/auth/users/count"
     );
 
     const groupsRes = await axios.get(
-      "http://localhost:8080/api/groups/count"
+      "https://invoice-management-backend-tqr8.onrender.com/api/groups/count"
     );
 
     setUserCount(usersRes.data);

@@ -22,7 +22,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/auth/login",
+        "https://invoice-management-backend-tqr8.onrender.com/auth/login",
         loginData
       );
 
@@ -99,7 +99,10 @@ function Login() {
             />
 
             <div className="flex justify-between items-center">
-              <Link to="#" className="text-sky-500 text-sm">
+             <Link
+                to="/forgot-password"
+                className="text-sky-500 text-sm"
+              >
                 Forgot Password?
               </Link>
 
